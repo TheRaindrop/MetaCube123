@@ -1,0 +1,264 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Bootstrap Template</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/master.css">
+
+</head>
+<body>
+<div id="browse">
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li role="presentation" class="active"><a href="#">系统</a></li>
+                    <li role="presentation"><a href="#">指标</a></li>
+                    <li role="presentation"><a href="#">报表</a></li>
+                    <li role="presentation"><a href="#">库表</a></li>
+                    <li role="presentation"><a href="#">信息项</a></li>
+                    <li role="presentation"><a href="#">代码</a></li>
+                    <li role="presentation"><a href="#">ETL作业</a></li>
+                    <li role="presentation"><a href="#">接口文件</a></li>
+                    <li role="presentation"><a href="#">逻辑模型实体</a></li>
+                    <li role="presentation"><a href="#">其他</a></li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+    <div class="panel panel-default">
+        <ul class="nav nav-tabs" role="tablist" style="border:none;">
+            <li role="presentation"><a href="#">系统分类</a></li>
+            <li role="presentation"><a href="#">></a></li>
+            <li role="presentation"><a href="#">业务生产类系统</a></li>
+            <li role="presentation"><a href="#">业务支持类系统</a></li>
+            <li role="presentation"><a href="#">缓冲区</a></li>
+            <li role="presentation"><a href="#">数据平台</a></li>
+            <li role="presentation"><a href="#">数据仓库</a></li>
+            <li role="presentation"><a href="#">......</a></li>
+        </ul>
+        <ul class="nav nav-tabs" role="tablist" style="border:none;">
+            <li role="presentation"><a href="#">管理部门</a></li>
+            <li role="presentation"><a href="#">></a></li>
+            <li role="presentation"><a href="#">A部门</a></li>
+            <li role="presentation"><a href="#">B部门</a></li>
+            <li role="presentation"><a href="#">C部门</a></li>
+            <li role="presentation"><a href="#">D部门</a></li>
+            <li role="presentation"><a href="#">E部门</a></li>
+            <li role="presentation"><a href="#">......</a></li>
+        </ul>
+        <div class="panel-body">
+            <form class="form-inline" role="form">
+                <span style="margin-right:10px;">系统名称</span>
+                <div class="input-group" style="margin-right:10px;">
+                    <input type="text" class="form-control">
+                    <span class="input-group-btn">
+                    <button class="btn btn-default" type="button">
+                        <span class="glyphicon glyphicon-search"></span>
+                    </button>
+                </span>
+                </div>
+                <button type="submit" class="btn btn-success" style="margin-right:10px;">查询</button>
+                <button type="reset" class="btn btn-info" style="margin-right:10px;">重置</button>
+            </form>
+        </div>
+
+    </div>
+    <div>
+        <ul class="pagination" style="margin-top:0;margin-bottom:0;">
+            <li><a data-toggle="modal" data-target="#browse-check" href="#">查看</a></li>
+            <li><a data-toggle="modal" data-target="#browse-analyse1" href="#">血统分析</a></li>
+            <li><a data-toggle="modal" data-target="#browse-analyse2" href="#">影响分析</a></li>
+            <li><a data-toggle="modal" data-target="#browse-analyse3" href="#">全链分析</a></li>
+            <li><a data-toggle="modal" data-target="#browse-analyse4" href="#">关系分析</a></li>
+            <li><a data-toggle="modal" data-target="#browse-version" href="#">查看版本</a></li>
+            <li><a data-toggle="modal" data-target="#browse-history" href="#">查看历史</a></li>
+        </ul>
+    </div>
+    <table class="table table-striped table-bordered table-hover table-condensed">
+        <caption class="sr-only">table</caption>
+        <thead>
+        <tr>
+            <th>序号</th>
+            <th>系统名称</th>
+            <th>系统描述</th>
+            <th>负责人</th>
+            <th>管理部门</th>
+            <th>上下文路径</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <th>1</th>
+            <td>核心系统</td>
+            <td>系统描述</td>
+            <td>负责人1</td>
+            <td>管理部门1</td>
+            <td>上下文路径</td>
+        </tr>
+        <tr>
+            <th>2</th>
+            <td>信贷系统</td>
+            <td>系统描述</td>
+            <td>负责人2</td>
+            <td>管理部门2</td>
+            <td>上下文路径</td>
+        </tr>
+        <tr>
+            <th>3</th>
+            <td>综合办公</td>
+            <td>系统描述</td>
+            <td>负责人3</td>
+            <td>管理部门3</td>
+            <td>上下文路径</td>
+        </tr>
+        <tr>
+            <th>4</th>
+            <td>资金系统</td>
+            <td>系统描述</td>
+            <td>负责人4</td>
+            <td>管理部门4</td>
+            <td>上下文路径</td>
+        </tr>
+        <tr>
+            <th>5</th>
+            <td>评级器系统</td>
+            <td>系统描述</td>
+            <td>负责人5</td>
+            <td>管理部门5</td>
+            <td>上下文路径</td>
+        </tr>
+        <tr>
+            <th>6</th>
+            <td>客户关系管理系统</td>
+            <td>系统描述</td>
+            <td>负责人6</td>
+            <td>管理部门6</td>
+            <td>上下文路径</td>
+        </tr>
+
+        </tbody>
+    </table>
+</div>
+<div class="modal fade" id="browse-check" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title">查看</h4>
+            </div>
+            <div class="modal-body" style="padding:5px 0 0 0;">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="browse-check.html"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="browse-analyse1" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title">血统分析</h4>
+            </div>
+            <div class="modal-body" style="padding:5px 0 0 0;">
+                <img src="img/analyse.png">
+                <!--<div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="browse-check.html"></iframe>
+                </div>-->
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="browse-analyse2" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title">影响分析</h4>
+            </div>
+            <div class="modal-body" style="padding:5px 0 0 0;">
+                <img src="img/analyse.png">
+                <!--<div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="browse-check.html"></iframe>
+                </div>-->
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="browse-analyse3" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title">全链分析</h4>
+            </div>
+            <div class="modal-body" style="padding:5px 0 0 0;">
+                <img src="img/analyse.png">
+                <!--<div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="browse-check.html"></iframe>
+                </div>-->
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="browse-analyse4" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title">关系分析</h4>
+            </div>
+            <div class="modal-body" style="padding:5px 0 0 0;">
+                <img src="img/analyse.png">
+                <!--<div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="browse-check.html"></iframe>
+                </div>-->
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="browse-version" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title">查看版本</h4>
+            </div>
+            <div class="modal-body" style="padding:5px 0 0 0;">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="browse-version.html"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="browse-history" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title">查看历史</h4>
+            </div>
+            <div class="modal-body" style="padding:5px 0 0 0;">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="browse-history.html"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+<script src="js/jquery.min.js"></script>
+
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+<script src="js/bootstrap.min.js"></script>
+
+</body>
+</html>

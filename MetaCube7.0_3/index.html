@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Bootstrap Template</title>
+    <link rel="stylesheet" href="base/css/bootstrap.min.css">
+    <link rel="stylesheet" href="base/css/master.css">
+    <script src="base/js/jquery.min.js"></script>
+    <script src="base/js/bootstrap.min.js"></script>
+    <script src="base/js/nui/nui.js"></script>
+    <style>
+        html, body {
+            height: 100%;
+        }
+        html {
+            overflow: hidden;
+        }
+        body {
+            font-family:"微软雅黑";
+            overflow: auto;
+            width: calc(100vw + 20px);
+            background-image: url(base/images/bg.png);
+            background-position:center;
+            background-size:100%;
+        }
+
+        .head .navbar-brand>img{
+            display:inline-block;
+        }
+        .head .navbar{
+            background-color:rgb(0,92,165);
+            min-height:40px;
+            height:40px;
+        }
+        .head>.navbar>.container-fluid{
+            margin-top:-6px;
+        }
+        .head .navbar-header a,.head ul.nav li a{
+            color:#c9e0ff;
+            font-family:'幼圆';
+        }
+        .head .navbar-brand:hover,.head .navbar-default .navbar-brand:focus {
+            color: #c9e0ff;
+        }
+        .head .nav>li>a:hover,.head .nav>li>a:focus{
+            color:#fff;
+        }
+        .main .menu{
+            background-color:rgb(239,238,236);
+            bottom: 0;
+            /*color: #eeeeee !important;*/
+            /*left: 0;*/
+            overflow-y: auto;
+            position: fixed !important;
+            top:0px;
+            width: 50px;
+            z-index: 1000;
+        }
+        .main .min-menu{
+            min-height: 300px;
+            margin-top:50px;
+        }
+        .main .menu ul.nav li a{
+            text-align:center;
+            height:50px;
+            border-radius:0;
+        }
+        .main .menu ul.nav li{
+            background-position: center center;
+            background-repeat:no-repeat;
+        }
+        .main .menu ul.nav li:nth-child(1){
+            background-image:url(base/images/icons/menu1-1.png);
+        }
+        .main .menu ul.nav li:nth-child(2){
+            background-image:url(base/images/icons/menu2-1.png);
+        }
+        .main .menu ul.nav li:nth-child(3){
+            background-image:url(base/images/icons/menu3-1.png);
+        }
+        .main .menu ul.nav li:nth-child(4){
+            background-image:url(base/images/icons/menu4-1.png);
+        }
+        .main .menu ul.nav li:nth-child(5){
+            background-image:url(base/images/icons/menu5-1.png);
+        }
+
+        .main .menu .nav-pills>li.active>a,.main .menu .nav-pills>li.active>a:hover,.main .menu .nav-pills>li.active>a:focus{
+            background-position: center center;
+            background-repeat:no-repeat;
+            background-color:rgb(239,238,236);
+        }
+        .main .menu .nav-pills>li:nth-child(1).active>a,.main .menu .nav-pills>li:nth-child(1).active>a:hover,.main .menu .nav-pills>li:nth-child(1).active>a:focus {
+            background-image: url(base/images/icons/menu1-3.png);
+        }
+        .main .menu .nav-pills>li:nth-child(2).active>a,.main .menu .nav-pills>li:nth-child(2).active>a:hover,.main .menu .nav-pills>li:nth-child(2).active>a:focus {
+            background-image: url(base/images/icons/menu2-3.png);
+        }
+        .main .menu .nav-pills>li:nth-child(3).active>a,.main .menu .nav-pills>li:nth-child(3).active>a:hover,.main .menu .nav-pills>li:nth-child(3).active>a:focus {
+            background-image: url(base/images/icons/menu3-3.png);
+        }
+        .main .menu .nav-pills>li:nth-child(4).active>a,.main .menu .nav-pills>li:nth-child(4).active>a:hover,.main .menu .nav-pills>li:nth-child(4).active>a:focus {
+            background-image: url(base/images/icons/menu4-3.png);
+        }
+        .main .menu .nav-pills>li:nth-child(5).active>a,.main .menu .nav-pills>li:nth-child(5).active>a:hover,.main .menu .nav-pills>li:nth-child(5).active>a:focus {
+            background-image: url(base/images/icons/menu5-3.png);
+        }
+        .main .menu .nav>li>a:hover,.main .menu .nav>li>a:focus{
+            background-position: center center;
+            background-repeat:no-repeat;
+            background-color:rgb(239,238,236);
+        }
+        .main .menu .nav>li:nth-child(1)>a:hover,.main .menu .nav>li:nth-child(1)>a:focus {
+            background-image: url(base/images/icons/menu1-1.png);
+        }
+        .main .menu .nav>li:nth-child(2)>a:hover,.main .menu .nav>li:nth-child(2)>a:focus {
+            background-image: url(base/images/icons/menu2-1.png);
+        }
+        .main .menu .nav>li:nth-child(3)>a:hover,.main .menu .nav>li:nth-child(3)>a:focus {
+            background-image: url(base/images/icons/menu3-1.png);
+        }
+        .main .menu .nav>li:nth-child(4)>a:hover,.main .menu .nav>li:nth-child(4)>a:focus {
+            background-image: url(base/images/icons/menu4-1.png);
+        }
+        .main .menu .nav>li:nth-child(5)>a:hover,.main .menu .nav>li:nth-child(5)>a:focus {
+            background-image: url(base/images/icons/menu5-1.png);
+        }
+        .main .content{
+            margin-top:39px;
+            margin-left:50px;
+        }
+
+        /*#index, .main, .tab-content{
+            height:100%;
+        }*/
+        #part2{
+
+        }
+        #part2 .panel{
+            margin-top:78px;
+            margin-left:10px;
+            margin-right:30px;
+            height:200px;
+            border-radius:0;
+            padding-top:60px;
+        }
+        #part2 .panel .panel-body .input-group-lg>.form-control{
+            border-top-left-radius:30px;
+            border-bottom-left-radius:30px;
+        }
+        #part2 .panel .panel-body .input-group-lg>.input-group-btn>.btn{
+            border-top-right-radius:30px;
+            border-bottom-right-radius:30px;
+            width:100px;
+            color:white;
+            background-color:#3798e9;
+            border-top-color:#3798e9;
+            border-right-color:#3798e9;
+            border-bottom-color:#3798e9;
+        }
+        .modal .modal-header{
+            padding:10px;
+            font-size:16px;
+            background-color:rgb(59,87,127);
+            color:white;
+        }
+
+    </style>
+</head>
+<body>
+<div id="index">
+    <div class="head">
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#" style="font-size: 16px;"><img src="base/images/icons/logo.png">&nbsp普元元数据管理系统</a>
+                </div>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#" id="change"><span class="glyphicon glyphicon-search"></span></a></li>
+                    <li><a href="#"><span>Nick</span></a></li>
+                    <li><a href="#">|</a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-envelope"></span><span style="background-color:#5398fd" class="badge">3</span></a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-cog" style="font-size:16px;"></span></a></li>
+                </ul>
+            </div><!-- /.container-fluid -->
+        </nav>
+    </div>
+    <div class="main">
+        <div class="tab-content">
+            <div role="tabpanel" class="tab-pane fade in active" id="part1">
+                <div class="menu">
+                    <div class="min-menu">
+                        <ul class="nav nav-pills nav-stacked" role="tablist">
+                            <li class="menu-li active" role="presentation"><a href="#home" data-toggle="tab" TITLE="首页"></a></li>
+                            <li class="menu-li" role="presentation"><a href="#browse" data-toggle="tab" title="浏览"></a></li>
+                            <li class="menu-li" role="presentation"><a href="#statisticalAnalysis" data-toggle="tab" title="统计分析"></a></li>
+                            <li class="menu-li" role="presentation"><a href="#appliCenter" data-toggle="tab" title="综合应用"></a></li>
+                            <li class="menu-li" role="presentation"><a href="#search" data-toggle="tab" title="查询"></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="content">
+                    <p style="display:none;">
+                        <button id="view-fullscreen">Fullscreen</button>
+                        <button id="cancel-fullscreen">Cancel fullscreen</button>
+                    </p>
+                    <div class="tab-content">
+                        <div id="home" class="tab-pane fade in active">
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <iframe class="embed-responsive-item" src="home.html"></iframe>
+                            </div>
+
+                        </div>
+                        <div id="browse" class="tab-pane fade">
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <iframe class="embed-responsive-item" src="browse.html"></iframe>
+                            </div>
+                        </div>
+                        <div id="statisticalAnalysis" class="tab-pane fade">
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <iframe class="embed-responsive-item" src="statisticalAnalysis.html"></iframe>
+                            </div>
+                        </div>
+                        <div id="appliCenter" class="tab-pane fade" role="tabpanel">
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <iframe class="embed-responsive-item" src="appliCenter.html"></iframe>
+                            </div>
+                        </div>
+                        <div id="search" class="tab-pane fade" role="tabpanel">
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <iframe class="embed-responsive-item" src="search.html"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="part2">
+                <div class="panel panel-info">
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-lg-8 col-lg-offset-2">
+                                <div class="input-group input-group-lg">
+                                    <input type="text" class="form-control" placeholder="搜索">
+                                    <span class="input-group-btn">
+                                        <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span></button>
+                                    </span>
+                                </div><!-- /input-group -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+    <div class="modal fade" id="news" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    <h5 class="modal-title" id="myModalLabel">消息</h5>
+                </div>
+                <div class="modal-body">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="news.html"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="user" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    <h5 class="modal-title">个人信息</h5>
+                </div>
+                <div class="modal-body">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="user.html"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+</div>
+
+
+
+
+
+<script type="text/javascript">
+    $('.embed-responsive.embed-responsive-16by9').height($(window).height()-39);
+    $(window).resize(function() {
+        $('.embed-responsive.embed-responsive-16by9').height($(window).height()-39);
+    });
+    $('.menu-li a').click(function(){
+        var h=$(this).attr('href');
+        var h2=h.substring(1)+'.html';
+        $(h+' iframe').attr("src",h2);
+        if($('#part2').hasClass('in active')){
+            $('#part1').addClass("in active");
+            $('#part2').removeClass("active").removeClass("in");
+        }
+    })
+    var a=false;
+    $('#change').click(function(){
+        if($('#part1').hasClass('in active')){
+            $('#part1').removeClass("active").removeClass("in");
+            $('#part2').addClass("in active");
+        }else{
+            $('#part1').addClass("in active");
+            $('#part2').removeClass("active").removeClass("in");
+        }
+    });
+
+    function fullScreen(){
+        $('.main .menu').hide(1000);
+        $('.head').hide(1000);
+        $('.main .content').animate({
+            margin:0
+        });
+        $('#view-fullscreen').click();
+
+    }
+    function exitFullScreen(){
+        $('.main .menu').show(1000);
+        $('.head').show(1000);
+        $('.main .content').animate({
+            'margin-top':'39px',
+            'margin-left':'50px',
+
+        });
+        $('#cancel-fullscreen').click();
+    }
+
+
+    (function () {
+        var viewFullScreen = document.getElementById("view-fullscreen");
+        if (viewFullScreen) {
+            viewFullScreen.addEventListener("click", function () {
+                var docElm = document.documentElement;
+                if (docElm.requestFullscreen) {
+                    docElm.requestFullscreen();
+                }
+                else if (docElm.msRequestFullscreen) {
+                    docElm.msRequestFullscreen();
+                }
+                else if (docElm.mozRequestFullScreen) {
+                    docElm.mozRequestFullScreen();
+                }
+                else if (docElm.webkitRequestFullScreen) {
+                    docElm.webkitRequestFullScreen();
+                }
+            }, false);
+        }
+
+        var cancelFullScreen = document.getElementById("cancel-fullscreen");
+        if (cancelFullScreen) {
+            cancelFullScreen.addEventListener("click", function () {
+                if (document.exitFullscreen) {
+                    document.exitFullscreen();
+                }
+                else if (document.msExitFullscreen) {
+                    document.msExitFullscreen();
+                }
+                else if (document.mozCancelFullScreen) {
+                    document.mozCancelFullScreen();
+                }
+                else if (document.webkitCancelFullScreen) {
+                    document.webkitCancelFullScreen();
+                }
+            }, false);
+        }
+    })();
+
+</script>
+</body>
+</html>

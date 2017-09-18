@@ -1,0 +1,51 @@
+.blue{
+    height: 30px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+.form-group>input,
+.form-group>.input-group>input,
+.form-control{
+    height:30px;
+}
+.form-inline>.form-group>label{
+    margin-left:20px;
+    font-weight:normal;
+    font-family:"微软雅黑"
+}
+.form-btm>.form-group,
+.form-btm>button{
+    margin-bottom:5px;
+}
+.embed-responsive.embed-responsive-16by9 {
+    padding-bottom:0;
+    height:100%;
+}
+.none-btn>button{
+    border:none;
+    color:dodgerblue;
+    background-color:white;
+}
+.modal-content{
+    border-radius:0;
+}
+.modal-content>.modal-body{
+    padding:0;
+}
+.circle-border .form-group .input-group input{
+    border-top-left-radius: 17px;
+    border-bottom-left-radius: 17px;
+}
+.circle-border .form-group .input-group .input-group-addon{
+    border-top-right-radius: 17px;
+    border-bottom-right-radius: 17px;
+}
+.table{
+    margin-bottom:10px;
+}
+.breadcrumb{
+    font-size: 16px;
+    font-family: "youyuan";
+    margin-top: 10px;
+    background-color:white;
+}

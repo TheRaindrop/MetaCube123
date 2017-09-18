@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Bootstrap Template</title>
+
+    <link rel="stylesheet" href="base/css/bootstrap.min.css">
+    <link rel="stylesheet" href="base/css/master.css">
+    <script src="base/js/jquery.min.js"></script>
+    <script src="base/js/bootstrap.min.js"></script>
+    <script src="base/js/nui/nui.js"></script>
+    <script src="base/js/jquery-1.12.4.js"></script>
+    <script src="base/js/jquery-ui.js"></script>
+    <style>
+        html, body {
+            height: 100%;
+        }
+        html {
+            overflow: hidden;
+        }
+        body {
+            font-family:"΢���ź�";
+            overflow: auto;
+            width: calc(100vw + 20px);
+        }
+        .breadcrumb{
+            font-size: 16px;
+            font-family: "youyuan";
+            margin-top: 10px;
+            background-color:white;
+        }
+
+        form+hr{
+            margin-top:15px;
+            margin-bottom:5px;
+        }
+    </style>
+
+</head>
+<body>
+<ol class="breadcrumb">
+    <li><a href="appliCenter.html">综合应用</a></li>
+    <li class="active">系统版本维护</li>
+</ol>
+<form class="form-inline form-btm">
+    <div class="form-group">
+        <label for="input1">版本编号</label>
+        <input type="text" class="form-control" id="input1" placeholder="">
+    </div>
+    <div class="form-group">
+        <label for="input2">定版时间</label>
+        <input type="text" class="form-control" id="input2" placeholder="">
+    </div>
+    <div class="form-group">
+        <label for="input3">系统</label>
+        <input type="text" class="form-control" id="input3" placeholder="">
+    </div>
+    <div class="form-group">
+        <label for="input4">定版人员</label>
+        <input type="text" class="form-control" id="input4" placeholder="">
+    </div>
+    <div class="form-group">
+        <label for="input5">是否基线版本</label>
+        <input type="text" class="form-control" id="input5" placeholder="">
+    </div>
+    <div class="form-group">
+        <label for="input6">版本描述</label>
+        <input type="text" class="form-control" id="input6" placeholder="">
+    </div>
+    <button type="submit" class="btn btn-primary blue">查询</button>
+    <button type="reset" class="btn btn-primary blue">重置</button>
+</form>
+<hr>
+<p class="none-btn">
+    &nbsp<button id=""><span class="glyphicon glyphicon-plus"></span>发布版本</button>
+</p>
+<button type="button" id="btn-modal" class="sr-only" data-toggle="modal" data-target=".modal-public"></button>
+<div id="myModal" class="modal fade modal-public" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+    <div id="modalDialog" class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h5 class="modal-title" id="myModalLabel"></h5>
+            </div>
+            <div class="modal-body">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src=""></iframe>
+                </div>
+
+            </div>
+            <div class="modal-footer">
+
+            </div>
+        </div>
+    </div>
+</div>
+<table class="table table-hover table-condensed ">
+    <thead style="background-color:#dad1d1 ">
+    <tr>
+        <td><input type="checkbox"></td>
+        <td>版本编号</td>
+        <td>定版时间</td>
+        <td>定版人员</td>
+        <td>版本描述</td>
+        <td>是否基线版本</td>
+        <td>操作</td>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td><input type="checkbox"> </td>
+        <td>BGD001</td>
+        <td>16-5-23 AM 11:22</td>
+        <td>小明</td>
+        <td>我是版本描述</td>
+        <td>是</td>
+        <td>
+            <a href="#">概览</a>
+            <a class="detail" href="appli3-detail.html">详情</a>
+        </td>
+    </tr>
+    <tr>
+        <td><input type="checkbox"> </td>
+        <td>BGD001</td>
+        <td>16-5-23 AM 11:22</td>
+        <td>小明</td>
+        <td>我是版本描述</td>
+        <td>是</td>
+        <td>
+            <a href="#">概览</a>
+            <a class="detail" href="appli3-detail.html">详情</a>
+        </td>
+    </tr>
+    <tr>
+        <td><input type="checkbox"> </td>
+        <td>BGD001</td>
+        <td>16-5-23 AM 11:22</td>
+        <td>小明</td>
+        <td>我是版本描述</td>
+        <td>是</td>
+        <td>
+            <a href="#">概览</a>
+            <a class="detail" href="appli3-detail.html">详情</a>
+        </td>
+    </tr>
+    <tr>
+        <td><input type="checkbox"> </td>
+        <td>BGD001</td>
+        <td>16-5-23 AM 11:22</td>
+        <td>小明</td>
+        <td>我是版本描述</td>
+        <td>是</td>
+        <td>
+            <a href="#">概览</a>
+            <a href="#">详情</a>
+        </td>
+    </tr>
+    <tr>
+        <td><input type="checkbox"> </td>
+        <td>BGD001</td>
+        <td>16-5-23 AM 11:22</td>
+        <td>小明</td>
+        <td>我是版本描述</td>
+        <td>是</td>
+        <td>
+            <a href="#">概览</a>
+            <a href="#">详情</a>
+        </td>
+    </tr>
+    <tr>
+        <td><input type="checkbox"> </td>
+        <td>BGD001</td>
+        <td>16-5-23 AM 11:22</td>
+        <td>小明</td>
+        <td>我是版本描述</td>
+        <td>是</td>
+        <td>
+            <a href="#">概览</a>
+            <a href="#">详情</a>
+        </td>
+    </tr>
+    <tr>
+        <td><input type="checkbox"> </td>
+        <td>BGD001</td>
+        <td>16-5-23 AM 11:22</td>
+        <td>小明</td>
+        <td>我是版本描述</td>
+        <td>是</td>
+        <td>
+            <a href="#">概览</a>
+            <a href="#">详情</a>
+        </td>
+    </tr>
+    <tr>
+        <td><input type="checkbox"> </td>
+        <td>BGD001</td>
+        <td>16-5-23 AM 11:22</td>
+        <td>小明</td>
+        <td>我是版本描述</td>
+        <td>是</td>
+        <td>
+            <a href="#">概览</a>
+            <a href="#">详情</a>
+        </td>
+    </tr>
+    <tr>
+        <td><input type="checkbox"> </td>
+        <td>BGD001</td>
+        <td>16-5-23 AM 11:22</td>
+        <td>小明</td>
+        <td>我是版本描述</td>
+        <td>是</td>
+        <td>
+            <a href="#">概览</a>
+            <a href="#">详情</a>
+        </td>
+    </tr>
+    <tr>
+        <td><input type="checkbox"> </td>
+        <td>BGD001</td>
+        <td>16-5-23 AM 11:22</td>
+        <td>小明</td>
+        <td>我是版本描述</td>
+        <td>是</td>
+        <td>
+            <a href="#">概览</a>
+            <a href="#">详情</a>
+        </td>
+    </tr>
+    <tr>
+        <td><input type="checkbox"> </td>
+        <td>BGD001</td>
+        <td>16-5-23 AM 11:22</td>
+        <td>小明</td>
+        <td>我是版本描述</td>
+        <td>是</td>
+        <td>
+            <a href="#">概览</a>
+            <a href="#">详情</a>
+        </td>
+    </tr>
+    <tr>
+        <td><input type="checkbox"> </td>
+        <td>BGD001</td>
+        <td>16-5-23 AM 11:22</td>
+        <td>小明</td>
+        <td>我是版本描述</td>
+        <td>是</td>
+        <td>
+            <a href="#">概览</a>
+            <a href="#">详情</a>
+        </td>
+    </tr>
+    <tr>
+        <td><input type="checkbox"> </td>
+        <td>BGD001</td>
+        <td>16-5-23 AM 11:22</td>
+        <td>小明</td>
+        <td>我是版本描述</td>
+        <td>是</td>
+        <td>
+            <a href="#">概览</a>
+            <a href="#">详情</a>
+        </td>
+    </tr>
+    <tr>
+        <td><input type="checkbox"> </td>
+        <td>BGD001</td>
+        <td>16-5-23 AM 11:22</td>
+        <td>小明</td>
+        <td>我是版本描述</td>
+        <td>是</td>
+        <td>
+            <a href="#">概览</a>
+            <a href="#">详情</a>
+        </td>
+    </tr>
+    </tbody>
+</table>
+<nav aria-label="Page navigation">
+    <ul class="pagination">
+        <li>
+            <a href="#" aria-label="Previous">
+                <span aria-hidden="true">&laquo;</span>
+            </a>
+        </li>
+        <li><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+        <li>
+            <a href="#" aria-label="Next">
+                <span aria-hidden="true">&raquo;</span>
+            </a>
+        </li>
+    </ul>
+</nav>
+
+<script>
+    $(document).ready(function(){
+        $("#modalDialog").draggable();//为模态对话框添加拖拽
+        $("#myModal").css("overflow", "hidden");//禁止模态对话框的半透明背景滚动
+
+        /*$('.detail').click(function () {
+            $('#myModal .modal-dialog').width(700);
+            $('#myModal .modal-content .modal-body').height(300);
+            $('#myModal h5').text("详情");
+            $('#myModal .modal-footer').html('<button type="button" class="btn btn-default blue" data-dismiss="modal">关闭</button>');
+            $('#myModal iframe').attr('src','appli3-detail.html');
+            $('#btn-modal').click();
+        });*/
+    });
+
+</script>
+</body>
+</html>

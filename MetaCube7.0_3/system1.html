@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Bootstrap Template</title>
+    <link rel="stylesheet" href="base/css/bootstrap.min.css">
+    <link rel="stylesheet" href="base/css/master.css">
+    <script src="base/js/jquery.min.js"></script>
+    <script src="base/js/bootstrap.min.js"></script>
+    <script src="base/js/nui/nui.js"></script>
+    <style>
+
+        html, body {
+            height: 100%;
+        }
+        html {
+            overflow: hidden;
+        }
+        body {
+            font-family:"微软雅黑";
+            overflow: auto;
+            width: calc(100vw + 20px);
+        }
+        .panel-group .panel {
+            border: none;
+            margin-bottom: -5px;
+        }
+        .panel-group .panel-heading+.panel-collapse>.panel-body{
+            border-top:none;
+        }
+        .panel-body>*{
+            width:450px;
+            margin-left:50px;
+        }
+        .table>thead>tr>th, .table>tbody>tr>th, .table>tfoot>tr>th, .table>thead>tr>td, .table>tbody>tr>td, .table>tfoot>tr>td {
+            border-top:none;
+        }
+    </style>
+</head>
+<body>
+<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+    <div class="panel">
+        <div class="panel-heading" role="tab" id="headingOne">
+            <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <span class="glyphicon glyphicon-star"></span>基本信息
+                </a>
+            </h4>
+        </div>
+        <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+            <div class="panel-body">
+                <table class="table">
+                    <tbody>
+                    <tr>
+                        <th>元数据代码：</th>
+                        <td>AAAAA</td>
+                    </tr>
+                    <tr>
+                        <th>元数据名称：</th>
+                        <td>BBBBB</td>
+                    </tr>
+                    <tr>
+                        <th>生效时间：</th>
+                        <td>2017-01-19 14:48:03</td>
+                    </tr>
+                    <tr>
+                        <th>失效时间：</th>
+                        <td>2017-01-19 14:48:16</td>
+                    </tr>
+                    <tr>
+                        <th>元数据类型：</th>
+                        <td>系统</td>
+                    </tr>
+                    <tr>
+                        <th>上下文路径：</th>
+                        <td>系统1</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="panel">
+        <div class="panel-heading" role="tab" id="headingTwo">
+            <h4 class="panel-title">
+                <a class="collapsed" data-toggle="collapse" data-parent="" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    <span class="glyphicon glyphicon-star"></span>属性信息
+                </a>
+            </h4>
+        </div>
+        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+            <div class="panel-body">
+                <table class="table">
+                    <!--<caption>Optional table caption.</caption>-->
+                    <!--<thead>
+
+                    </thead>-->
+                    <tbody>
+                    <tr>
+                        <th>属性：</th>
+                        <td>AAAAA</td>
+                    </tr>
+                    <tr>
+                        <th>属性：</th>
+                        <td>BBBBB</td>
+                    </tr>
+                    <tr>
+                        <th>属性：</th>
+                        <td>CCCCCCC</td>
+                    </tr>
+                    <tr>
+                        <th>属性：</th>
+                        <td>DDDDDD</td>
+                    </tr>
+                    <tr>
+                        <th>属性：</th>
+                        <td>EEEEEEEEE</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="panel">
+        <div class="panel-heading" role="tab" id="headingThree">
+            <h4 class="panel-title">
+                <a class="collapsed" data-toggle="collapse" data-parent="" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    <span class="glyphicon glyphicon-star"></span>系统
+                </a>
+            </h4>
+        </div>
+        <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+            <div class="panel-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+            </div>
+        </div>
+    </div>
+    <div class="panel">
+        <div class="panel-heading" role="tab" id="headingFour">
+            <h4 class="panel-title">
+                <a class="collapsed" data-toggle="collapse" data-parent="" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    <span class="glyphicon glyphicon-star"></span>系统层次
+                </a>
+            </h4>
+        </div>
+        <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+            <div class="panel-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+            </div>
+        </div>
+    </div>
+    <div class="panel">
+        <div class="panel-heading" role="tab" id="headingFive">
+            <h4 class="panel-title">
+                <a class="collapsed" data-toggle="collapse" data-parent="" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                    <span class="glyphicon glyphicon-star"></span>组合关系
+                </a>
+            </h4>
+        </div>
+        <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+            <div class="panel-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

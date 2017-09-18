@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Bootstrap Template</title>
+
+    <link rel="stylesheet" href="base/css/bootstrap.min.css">
+    <link rel="stylesheet" href="base/css/master.css">
+    <script src="base/js/jquery.min.js"></script>
+    <script src="base/js/bootstrap.min.js"></script>
+    <script src="base/js/nui/nui.js"></script>
+    <style>
+        html, body {
+            height: 100%;
+        }
+        html {
+            overflow: hidden;
+        }
+        body {
+            font-family:"΢���ź�";
+            overflow: auto;
+            width: calc(100vw + 20px);
+        }
+        .left,
+        .right{
+            width:384px;
+            height:400px;
+            float:left;
+            border-bottom:1px solid rgb(226,226,226);
+        }
+        .left{
+            border-right:1px solid rgb(226,226,226);
+        }
+        .right{
+            border-left:1px solid rgb(226,226,226);
+        }
+        .divider1{
+            height:40px;
+            padding:5px;
+            background-color:rgb(245,245,245);
+        }
+        .form-inline{
+            display:inline-block;
+        }
+        .main{
+            overflow:auto;
+        }
+        .form-inline>span{
+            margin-left:130px;
+        }
+    </style>
+
+</head>
+<body>
+<div class="main">
+    <div class="left">
+        <div class="divider1">
+            <form class="form-inline circle-border" role="form">
+                <div class="form-group">
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="input1" placeholder="">
+                        <div class="input-group-addon"><span class="glyphicon glyphicon-search"></span></div>
+                    </div>
+                </div>
+                <span class="glyphicon glyphicon-refresh"></span>
+            </form>
+        </div>
+        <ul id="tree2" class="nui-tree" style="width:100%;height:350px;padding:5px;" showTreeIcon="true">
+            <li>
+                <span>NUI</span>
+                <ul>
+                    <li>
+                        <span expanded="false">Form</span>
+                        <ul>
+                            <li>ComboBox</li>
+                            <li>DatePicker</li>
+                            <li>Spinner</li>
+                            <li>TreeSelect</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span expanded="false">Lists</span>
+                        <ul>
+                            <li><a href="../datagrid/datagrid.html" target="_blank" style="color:Blue;text-decoration:underline;">DataGrid</a></li>
+                            <li>Tree</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span expanded="false">Layouts</span>
+                        <ul>
+                            <li>Panel</li>
+                            <li>Splitter</li>
+                            <li>Layout</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span expanded="false">Navigations</span>
+                        <ul>
+                            <li>Tabs</li>
+                            <li>NavBar</li>
+                            <li>Menu</li>
+                            <li>Pager</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+    </div>
+    <div class="right">
+        <div class="divider1">
+            <form class="form-inline circle-border" role="form">
+                <div class="form-group">
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="input2" placeholder="">
+                        <div class="input-group-addon"><span class="glyphicon glyphicon-search"></span></div>
+                    </div>
+                </div>
+                <span class="glyphicon glyphicon-refresh"></span>
+            </form>
+        </div>
+
+        <ul id="tree2" class="nui-tree" style="width:100%;height:350px;padding:5px;" showTreeIcon="true">
+            <li>
+                <span>NUI</span>
+                <ul>
+                    <li>
+                        <span expanded="false">Form</span>
+                        <ul>
+                            <li>ComboBox</li>
+                            <li>DatePicker</li>
+                            <li>Spinner</li>
+                            <li>TreeSelect</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span expanded="false">Lists</span>
+                        <ul>
+                            <li><a href="../datagrid/datagrid.html" target="_blank" style="color:Blue;text-decoration:underline;">DataGrid</a></li>
+                            <li>Tree</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span expanded="false">Layouts</span>
+                        <ul>
+                            <li>Panel</li>
+                            <li>Splitter</li>
+                            <li>Layout</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span expanded="false">Navigations</span>
+                        <ul>
+                            <li>Tabs</li>
+                            <li>NavBar</li>
+                            <li>Menu</li>
+                            <li>Pager</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+    </div>
+</div>
+
+
+</body>
+</html>

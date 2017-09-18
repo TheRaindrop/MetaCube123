@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Bootstrap Template</title>
+
+    <link rel="stylesheet" href="base/css/bootstrap.min.css">
+    <link rel="stylesheet" href="base/css/master.css">
+    <script src="base/js/jquery.min.js"></script>
+    <script src="base/js/bootstrap.min.js"></script>
+    <script src="base/js/nui/nui.js"></script>
+    <style>
+        html, body {
+            height: 100%;
+        }
+        html {
+            overflow: hidden;
+        }
+        body {
+            font-family:"΢���ź�";
+            overflow: auto;
+            width: calc(100vw + 20px);
+        }
+        .left,
+        .right{
+            width:399px;
+            height:400px;
+            float:left;
+        }
+        .left{
+            border-right:1px solid rgb(226,226,226);
+        }
+        .right{
+            border-left:1px solid rgb(226,226,226);
+        }
+        .divider1{
+            height:40px;
+            padding:5px;
+            background-color:rgb(245,245,245);
+        }
+        .divider1>form>.form-group{
+            float:right;
+        }
+        .divider2{
+            height:40px;
+            padding:5px;
+        }
+        .divider2>select{
+            display:inline-block;
+            width:150px;
+        }
+        .divider2>span{
+            float:right;
+            margin-top:4px;
+        }
+    </style>
+
+</head>
+<body>
+<div class="left">
+    <div class="divider1">
+        <form class="form-inline circle-border" role="form">
+            <span>待分配规则</span>
+            <div class="form-group">
+                <div class="input-group">
+                    <input type="text" class="form-control" id="input1" placeholder="搜索规则">
+                    <div class="input-group-addon"><span class="glyphicon glyphicon-search"></span></div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="divider2">
+        <select class="form-control">
+            <option>规则组选择</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select>
+        <span>
+            <span class="glyphicon glyphicon-step-backward"></span>
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="badge">1</span>
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="glyphicon glyphicon-step-forward"></span>
+        </span>
+    </div>
+    <table class="table table-hover table-condensed ">
+        <thead style="background-color:rgb(236,238,239) ">
+        <tr>
+            <td>规则名称</td>
+            <td>规则编码</td>
+            <td>操作</td>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>AAAAAA</td>
+            <td>ABCDE</td>
+            <td>+</td>
+        </tr>
+        <tr>
+            <td>AAAAAA</td>
+            <td>ABCDE</td>
+            <td>+</td>
+        </tr>
+        <tr>
+            <td>AAAAAA</td>
+            <td>ABCDE</td>
+            <td>+</td>
+        </tr>
+        <tr>
+            <td>AAAAAA</td>
+            <td>ABCDE</td>
+            <td>+</td>
+        </tr>
+        <tr>
+            <td>AAAAAA</td>
+            <td>ABCDE</td>
+            <td>+</td>
+        </tr>
+        <tr>
+            <td>AAAAAA</td>
+            <td>ABCDE</td>
+            <td>+</td>
+        </tr>
+        <tr>
+            <td>AAAAAA</td>
+            <td>ABCDE</td>
+            <td>+</td>
+        </tr>
+        <tr>
+            <td>AAAAAA</td>
+            <td>ABCDE</td>
+            <td>+</td>
+        </tr>
+        <tr>
+            <td>AAAAAA</td>
+            <td>ABCDE</td>
+            <td>+</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<div class="right">
+    <div class="divider1">执行规则</div>
+    <div class="divider2">
+        <span>
+            <span class="glyphicon glyphicon-step-backward"></span>
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="badge">1</span>
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="glyphicon glyphicon-step-forward"></span>
+        </span>
+    </div>
+    <table class="table table-hover table-condensed ">
+        <thead style="background-color:rgb(236,238,239) ">
+        <tr>
+            <td>规则名称</td>
+            <td>规则编码</td>
+            <td>操作</td>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>AAAAAA</td>
+            <td>ABCDE</td>
+            <td>&times;</td>
+        </tr>
+        <tr>
+            <td>AAAAAA</td>
+            <td>ABCDE</td>
+            <td>&times;</td>
+        </tr>
+        <tr>
+            <td>AAAAAA</td>
+            <td>ABCDE</td>
+            <td>&times;</td>
+        </tr>
+
+        </tbody>
+    </table>
+</div>
+</body>
+</html>

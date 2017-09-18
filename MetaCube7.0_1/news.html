@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Bootstrap Template</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/master.css">
+</head>
+<body>
+<div id="news">
+    <div class="right">
+        <ul class="nav nav-tabs nav-stacked" role="tablist">
+            <li role="presentation" class="tabs active"><a href="#change" role="tab" data-toggle="tab">变更通知</a></li>
+            <li role="presentation" class="tabs"><a href="#version" role="tab" data-toggle="tab">版本发布</a></li>
+            <li role="presentation" class="tabs"><a href="#comparison" role="tab" data-toggle="tab">对比任务</a></li>
+            <li role="presentation" class="tabs"><a href="#system" role="tab" data-toggle="tab">系统接入/下线</a></li>
+            <li role="presentation" class="tabs"><a href="#announcement" role="tab" data-toggle="tab">系统通知</a> </li>
+        </ul>
+    </div>
+    <div class="left">
+
+        <div class="tab-content">
+            <div role="tabpanel" class="tab-pane fade in active" id="change">
+                <div class="alert" style="background-color:rgb(249, 249, 249);color:#3289ff;font-weight:bold;" role="alert">
+                    变更通知
+                </div>
+                <br><br>
+                <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp2014-05-08&nbsp&nbsp&nbsp&nbsp&nbsp关于XXX系统XX库XX表XX字段变更的通知</p>
+                <br><br><br>
+                <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp2014-05-08&nbsp&nbsp&nbsp&nbsp&nbsp关于XXX系统XX库XX表XX字段变更的通知</p>
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="version">
+                <div class="alert" style="background-color:rgb(249, 249, 249);color:#3289ff;font-weight:bold;" role="alert">
+                    版本发布
+                </div>
+                <br><br>
+                <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp2014-05-08&nbsp&nbsp&nbsp&nbsp&nbsp关于XXX系统XX库XX表XX字段变更的通知</p>
+                <br><br><br>
+                <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp2014-05-08&nbsp&nbsp&nbsp&nbsp&nbsp关于XXX系统XX库XX表XX字段变更的通知</p>
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="comparison">
+                <div class="alert" style="background-color:rgb(249, 249, 249);color:#3289ff;font-weight:bold;" role="alert">
+                    对比任务
+                </div>
+                <br><br>
+                <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp2014-05-08&nbsp&nbsp&nbsp&nbsp&nbsp关于XXX系统XX库XX表XX字段变更的通知</p>
+                <br><br><br>
+                <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp2014-05-08&nbsp&nbsp&nbsp&nbsp&nbsp关于XXX系统XX库XX表XX字段变更的通知</p>
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="system">
+                <div class="alert" style="background-color:rgb(249, 249, 249);color:#3289ff;font-weight:bold;" role="alert">
+                    系统接入/下线
+                </div>
+                <br><br>
+                <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp2014-05-08&nbsp&nbsp&nbsp&nbsp&nbsp关于XXX系统XX库XX表XX字段变更的通知</p>
+                <br><br><br>
+                <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp2014-05-08&nbsp&nbsp&nbsp&nbsp&nbsp关于XXX系统XX库XX表XX字段变更的通知</p>
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="announcement">
+                <div class="alert" style="background-color:rgb(249, 249, 249);color:#3289ff;font-weight:bold;" role="alert">
+                    系统通知
+                </div>
+                <br><br>
+                <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp2014-05-08&nbsp&nbsp&nbsp&nbsp&nbsp关于XXX系统XX库XX表XX字段变更的通知</p>
+                <br><br><br>
+                <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp2014-05-08&nbsp&nbsp&nbsp&nbsp&nbsp关于XXX系统XX库XX表XX字段变更的通知</p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+<script src="js/jquery.min.js"></script>
+
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+<script src="js/bootstrap.min.js"></script>
+<script>
+    $(function () {
+
+        $(".tabs a").mouseover(function (e) {
+            var that=this;
+            setTimeout(function(){
+                $(that).tab('show');
+            },0);
+        });
+    });
+</script>
+</body>
+</html>

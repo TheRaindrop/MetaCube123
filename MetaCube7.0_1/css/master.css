@@ -1,0 +1,189 @@
+table td{
+    height:31px;
+}
+#index .head .navbar{
+    height:60px;
+    font-size:18px;
+}
+#index .navbar .container-fluid{
+    margin-top:5px;
+    font-family:"幼圆";
+}
+#index .navbar .container-fluid ul li{
+    margin-right:15px;
+}
+#index .head .navbar .container-fluid .navbar-header img{
+    display:inline-block;
+    height:20px;
+}
+#index .head .navbar .container-fluid .navbar-form .input-group{
+    width:300px;
+    border-radius:0;
+}
+#index .head .navbar .container-fluid .navbar-form .input-group input{
+    border-radius:20px;
+}
+#index .main{
+    width:100%;
+    margin-top:60px;
+}
+/*#index .main .menu{
+    float:left;
+    width:90px;
+    background-color:rgb(77,86,102);
+<<<<<<< HEAD
+}*/
+#index .main .menu{
+    background-color:rgb(77,86,102);
+    bottom: 0;
+    /*color: #eeeeee !important;*/
+    /*left: 0;*/
+    overflow-y: auto;
+    position: fixed !important;
+    top:60px;
+    width: 90px;
+    z-index: 1000;
+}
+#index .main .menu .min-menu{
+    min-height: 500px;
+=======
+
+}
+#index .main .menu ul{
+    padding-top:40px;
+    padding-bottom:60px;
+>>>>>>> origin/master
+}
+#index .main .menu ul li{
+    height:90px;
+}
+#index .main .menu ul li a:enabled{
+    background-color:rgb(77, 86, 102);
+}
+#index .main .menu ul li a{
+    height:90px;
+    text-align:center;
+    padding-top:30px;
+
+}
+
+#index .main .menu ul li a:hover{
+    background-color:rgb(59,67,80);
+}
+#index .main .menu ul li a:focus{
+    background-color:rgb(49,57,80);
+}
+#index .main .menu ul li a img{
+    width:24px;
+    display:block;
+    margin:0 auto;
+}
+#index .main .menu ul li a span{
+    display:block;
+    margin:0 auto;
+}
+#index .content{
+    margin-left:95px;
+    padding-left:5px;
+    padding-right:5px;
+    overflow:auto;
+}
+#index .foot .navbar{
+    height:40px;
+}
+#index .foot .navbar p{
+    margin-top:5px;
+    text-align:center;
+}
+/*news page css*/
+#news .right{
+    float:right;
+    width:150px;
+}
+#news .left{
+    margin-right:160px;
+}
+/*home page css*/
+
+/*browse page css*/
+#browse .panel{
+    margin-top:55px;
+}
+/*analyze page css*/
+
+
+/*#appli .content p{
+    height:50px;
+    background-color: rgb(249, 249, 249);
+    padding-top:15px;
+    padding-left:5px;
+    color: #3289ff;
+    font-weight:bold;
+}*/
+#appli .panel{
+    margin-top:7px;
+    margin-bottom:7px;
+}
+#appli .part{
+    margin:5px;
+}
+#appli label{
+    width:100px;
+    margin-left:10px;
+}
+#appli .panel .panel-heading .glyphicon{
+    width:30px;
+    font-size:15px;
+
+}
+#appli .modal .modal-dialog{
+    width:654px;
+}
+/*#appli .modal .fileinput{
+    margin-left:5px;
+}
+#appli .modal .fileinput p{
+    color:red;
+    display:inline-block;
+}
+#appli .modal .modal-button{
+    text-align:center;
+}
+#appli .modal .modal-button button{
+    width:100px;
+}
+#appli .modal .fileinput input{
+    display:inline-block;
+}*/
+#search .a1 a{
+    float:right;
+    margin-right:10px;
+    margin-top:-90px;
+}
+#search .search-text{
+    margin-top:110px;
+    overflow:auto;
+}
+#search .search-text button{
+    background-color:rgb(26,188,156);
+    font-size:20px;
+    color:white;
+}
+#search .search-text img{
+    width:200px;
+    margin-bottom:30px;
+}
+#search .search-menu{
+    background-color:rgb(231,230,230);
+    width:100%;
+    overflow: auto;
+    margin-top:50px;
+    padding-top:7px;
+    padding-bottom:7px;
+    /*font-size:16px;*/
+}
+#search .search-menu ul li.active a{
+   background-color:rgb(52,73,94);
+    color:white;
+}
+

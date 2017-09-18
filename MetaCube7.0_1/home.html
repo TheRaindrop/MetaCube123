@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Bootstrap Template</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        .alert button{
+            float:right;
+            margin-right:20px;
+            padding:0 5px;
+        }
+    </style>
+</head>
+<body>
+<div class="alert" style="background-color:rgb(249, 249, 249);color:#3289ff;font-weight:bold;" role="alert">
+    元数据关联分析
+    <button type="button" id="change" class="btn btn-success">切换</button>
+
+
+
+
+</div>
+
+<div class="panel panel-default">
+    <div class="tab-content">
+        <div role="tabpanel" class="tab-pane fade in active" id="part1">
+            <img src="img/homeimg.png" style="width:1000px">
+        </div>
+        <div role="tabpanel" class="tab-pane fade" id="part2">
+            <img src="img/association.png">
+        </div>
+    </div>
+
+</div>
+
+
+<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+<script src="js/jquery.min.js"></script>
+
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+<script src="js/bootstrap.min.js"></script>
+<script>
+    $(function(){
+        var a=false;
+        $('#change').click(function(){
+                    a=!a;
+                    if(a){
+                        $('#part1').removeClass("active").removeClass("in");
+                        $('#part2').addClass("in active");
+                    }else{
+                        $('#part1').addClass("in active");
+                        $('#part2').removeClass("active").removeClass("in");
+                    }
+                });
+    })
+</script>
+</body>
+</html>

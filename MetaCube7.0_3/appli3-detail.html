@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Bootstrap Template</title>
+
+    <link rel="stylesheet" href="base/css/bootstrap.min.css">
+    <link rel="stylesheet" href="base/css/master.css">
+    <script src="base/js/jquery.min.js"></script>
+    <script src="base/js/bootstrap.min.js"></script>
+    <script src="base/js/nui/nui.js"></script>
+    <style>
+        html, body {
+            height: 100%;
+        }
+        html {
+            overflow: hidden;
+        }
+        body {
+            font-family:"΢���ź�";
+            overflow: auto;
+            width: calc(100vw + 20px);
+        }
+        .breadcrumb{
+            font-size: 16px;
+            font-family: "youyuan";
+            margin-top: 10px;
+            background-color:white;
+        }
+        ol+hr{
+            margin-top:15px;
+            margin-bottom:5px;
+        }
+        .left{
+            width:150px;
+            border-right:1px solid rgb(236,235,233);
+            float:left;
+            bottom:0;
+        }
+        .right{
+            margin-left:150px;
+        }
+        .p-head{
+            padding:10px;
+        }
+        .nav-pills>li.active>a, .nav-pills>li.active>a:hover, .nav-pills>li.active>a:focus {
+            color: #000;
+            background-color: rgb(245,245,245);
+        }
+        .nav-pills>li>a {
+            border-radius:0;
+        }
+        .table>thead>tr>th, .table>tbody>tr>th, .table>tfoot>tr>th, .table>thead>tr>td, .table>tbody>tr>td, .table>tfoot>tr>td {
+            border:none;
+        }
+    </style>
+
+</head>
+<body>
+<ol class="breadcrumb">
+    <li><a href="appliCenter.html">综合应用</a></li>
+    <li><a href="application3.html">系统版本维护</a></li>
+    <li class="active">详情</li>
+</ol>
+<hr>
+<div class="left">
+    <ul class="nav nav-pills nav-stacked" role="tablist">
+        <li role="presentation" class="active"><a href="#tab1" aria-controls="home" role="tab" data-toggle="tab">基本信息</a></li>
+        <li role="presentation"><a href="#tab2" aria-controls="profile" role="tab" data-toggle="tab">属性信息</a></li>
+        <li role="presentation"><a href="#tab3" aria-controls="messages" role="tab" data-toggle="tab">系统</a></li>
+        <li role="presentation"><a href="#tab4" aria-controls="settings" role="tab" data-toggle="tab">系统层次</a></li>
+        <li role="presentation"><a href="#tab5" aria-controls="settings2" role="tab" data-toggle="tab">版本树</a></li>
+    </ul>
+</div>
+<div class="right">
+    <div class="tab-content">
+        <div role="tabpanel" class="tab-pane fade in active" id="tab1">
+            <p class="p-head"><strong>基本信息：</strong></p>
+            <table class="table table-hover table-condensed table-striped">
+                <tbody>
+                <tr>
+                    <td>元数据代码：</td>
+                    <td>AAAAAA</td>
+                </tr>
+                <tr>
+                    <td>元数据名称：</td>
+                    <td>BBBBB</td>
+                </tr>
+                <tr>
+                    <td>生效时间：</td>
+                    <td>2017-10-10 10：10：10</td>
+                </tr>
+                <tr>
+                    <td>失效时间：</td>
+                    <td>2017-02-15 14:33:19</td>
+                </tr>
+                <tr>
+                    <td>元数据类型：</td>
+                    <td>系统</td>
+                </tr>
+                <tr>
+                    <td>上下文类型：</td>
+                    <td>系统1</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div role="tabpanel" class="tab-pane fade" id="tab2">22222222</div>
+        <div role="tabpanel" class="tab-pane fade" id="tab3">333333333333</div>
+        <div role="tabpanel" class="tab-pane fade" id="tab4">444444444</div>
+        <div role="tabpanel" class="tab-pane fade" id="tab5">555555555</div>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Bootstrap Template</title>
+
+    <link rel="stylesheet" href="base/css/bootstrap.min.css">
+    <link rel="stylesheet" href="base/css/master.css">
+    <script src="base/js/jquery.min.js"></script>
+    <script src="base/js/bootstrap.min.js"></script>
+    <script src="base/js/nui/nui.js"></script>
+    <style>
+        html, body {
+            height: 100%;
+        }
+        html {
+            overflow: hidden;
+        }
+        body {
+            font-family:"΢���ź�";
+            overflow: auto;
+            width: calc(100vw + 20px);
+        }
+
+        .tab-content{
+            margin-top:1px;
+        }
+        ul{
+            margin-left:1px;
+            background-color:#e7eaef;
+        }
+        .tab-content>#tab1>.embed-responsive.embed-responsive-16by9 {
+            padding-bottom:0;
+            height: 100%;
+        }
+        img{
+            width:100%;
+        }
+    </style>
+
+</head>
+<body>
+
+<ul class="nav nav-tabs" role="tablist" id="ulTabs">
+    <li id="liTab1" role="presentation" class="active"><a href="#tab1" role="tab" data-toggle="tab">数据地图</a></li>
+    <li id="liTab2" role="presentation"><a href="#tab2" role="tab" data-toggle="tab">统计分析图</a></li>
+    <li id="liTab3" role="presentation"><a href="#tab3" role="tab" data-toggle="tab">主题地图</a></li>
+
+</ul>
+<div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="tab1">
+        <img src="base/images/datamap.png" alt="数据地图">
+        <!--<div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="homepage/dataMap.jsp"></iframe>
+        </div>-->
+    </div>
+    <div role="tabpanel" class="tab-pane" id="tab2">
+        <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="statisticalAnalysis.html"></iframe>
+        </div>
+    </div>
+    <div role="tabpanel" class="tab-pane" id="tab3">
+        <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="topicMap.html"></iframe>
+        </div>
+    </div>
+</div>
+
+
+
+</body>
+</html>

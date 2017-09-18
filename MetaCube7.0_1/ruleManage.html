@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Bootstrap Template</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/master.css">
+    <style>
+        .panel{
+            margin-top:7px;
+            margin-bottom:7px;
+        }
+        .part{
+            margin:5px;
+        }
+        label{
+            width:100px;
+            margin-left:10px;
+        }
+        .form-group select{
+            width:196px !important;
+        }
+        .panel .panel-heading .glyphicon{
+            width:30px;
+            font-size:15px;
+
+        }
+    </style>
+</head>
+<body>
+<div class="alert" style="background-color:rgb(249, 249, 249);color:#3289ff;font-weight:bold;" role="alert">
+    规则管理
+</div>
+<div class="panel panel-default">
+    <form class="form-inline" role="form">
+        <div class="part">
+            <div class="form-group">
+                <label for="input1">规则名称：</label>
+                <input type="text" class="form-control" id="input1" placeholder="">
+            </div>
+            <div class="form-group">
+                <label for="input2">创建时间：</label>
+                <input type="text" class="form-control" id="input2" placeholder="">
+            </div>
+        </div>
+        <div class="part">
+            <div class="form-group">
+                <label for="input3">创建人：</label>
+                <select class="form-control" id="input3">
+                    <option hidden="true"></option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="input4">规则类型：</label>
+                <select class="form-control" id="input4">
+                    <option hidden="true"></option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-default">查询</button>
+            <button type="reset" class="btn btn-default">重置</button>
+        </div>
+    </form>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <span class="glyphicon glyphicon-fast-backward"></span>
+        <span class="glyphicon glyphicon-backward"></span>
+        <span class="glyphicon glyphicon-chevron-left"></span>
+        <span class="glyphicon glyphicon-chevron-right"></span>
+        <span class="glyphicon glyphicon-forward"></span>
+        <span class="glyphicon glyphicon-fast-forward"></span>
+        <button type="button" data-toggle="modal" data-target="#add" class="btn btn-default">新增</button>
+        <button type="button" data-toggle="modal" data-target="#change" class="btn btn-default">修改</button>
+        <button type="button" class="btn btn-default">删除</button>
+    </div>
+    <div class="panel-body">
+        <table class="table table-striped table-bordered table-hover table-condensed">
+            <caption class="sr-only">table</caption>
+            <thead>
+            <tr>
+                <th><input type="checkbox"></th>
+                <th>规则编号</th>
+                <th>规则名称</th>
+                <th>规则类型</th>
+                <th>创建人</th>
+                <th>创建时间</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td><input type="checkbox"></td>
+                <td>GZ001</td>
+                <td>不比对属性/等价属性/等价对象</td>
+                <td>不比对属性/等价属性/等价对象</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox"></td>
+                <td>GZ002</td>
+                <td>不比对属性/等价属性/等价对象</td>
+                <td>不比对属性/等价属性/等价对象</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox"></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox"></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox"></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox"></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+
+            </tbody>
+        </table>
+    </div>
+    <div class="panel-footer">
+        <a href="#">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <span>第1页/共3页（共26条记录）</span>
+        <button type="button" class="btn btn-default">转到</button>
+    </div>
+</div>
+<div class="modal fade" id="add" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title">规则新增</h4>
+            </div>
+            <div class="modal-body">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe name="myFrame" class="embed-responsive-item" src="rule-add.html"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+<script src="js/jquery.min.js"></script>
+
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+<script src="js/bootstrap.min.js"></script>
+<script>
+    function closeModal(){
+        $('.modal').modal('hide');
+    }
+</script>
+</body>
+</html>

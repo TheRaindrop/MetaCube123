@@ -1,0 +1,27 @@
+.login-bg{
+    position:fixed;
+    top:-50%;
+    left:-50%;
+    width:200%;
+    height:200%;
+    background:#f0f3f4;
+
+}
+.loginPage{
+    position:absolute;
+    z--index:999;
+    margin:auto;
+    margin-top:-200px;
+    margin-left:-150px;
+    width:250px;
+    left:50%;
+    top:50%;
+    text-align:center;
+}
+.loginPage img{
+    width:120px;
+    margin-bottom:30px;
+}
+.loginPage button{
+    margin-bottom:10px;
+}

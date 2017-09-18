@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Bootstrap Template</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/master.css">
+    <style>
+        #appli-version .panel{
+            margin-top:7px;
+            margin-bottom:7px;
+        }
+        #appli-version .part{
+            margin:5px;
+        }
+        #appli-version label{
+            width:100px;
+            margin-left:10px;
+        }
+        #appli-version .panel .panel-heading .glyphicon{
+            width:30px;
+            font-size:15px;
+
+        }
+    </style>
+</head>
+<body>
+<div id="appli-version">
+    <div class="alert" style="background-color:rgb(249, 249, 249);color:#3289ff;font-weight:bold;" role="alert">
+        系统版本维护
+    </div>
+    <div class="panel panel-default">
+        <form class="form-inline" role="form">
+            <div class="part">
+                <div class="form-group">
+                    <label for="input1">版本编号：</label>
+                    <input type="text" class="form-control" id="input1" placeholder="">
+                </div>
+                <div class="form-group">
+                    <label for="input2">定版时间：</label>
+                    <input type="text" class="form-control" id="input2" placeholder="">
+                </div>
+            </div>
+            <div class="part">
+                <div class="form-group">
+                    <label for="input3">定版人员：</label>
+                    <input type="text" class="form-control" id="input3" placeholder="">
+                </div>
+                <div class="form-group">
+                    <label for="input4">版本描述：</label>
+                    <input type="text" class="form-control" id="input4" placeholder="">
+                </div>
+                <div class="form-group">
+                    <label for="input5">是否基线版本：</label>
+                    <input type="text" class="form-control" id="input5" placeholder="">
+                </div>
+                <button type="submit" class="btn btn-default">查询</button>
+                <button type="reset" class="btn btn-default">重置</button>
+            </div>
+        </form>
+    </div>
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <span class="glyphicon glyphicon-fast-backward"></span>
+            <span class="glyphicon glyphicon-backward"></span>
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="glyphicon glyphicon-forward"></span>
+            <span class="glyphicon glyphicon-fast-forward"></span>
+            <button type="button" data-toggle="modal" data-target="#version-browse" class="btn btn-default">概览</button>
+            <button type="button" data-toggle="modal" data-target="#version-tree" class="btn btn-default">版本数</button>
+
+        </div>
+        <div class="panel-body">
+            <table class="table table-striped table-bordered table-hover table-condensed">
+                <caption class="sr-only">table</caption>
+                <thead>
+                <tr>
+                    <th><input type="checkbox"></th>
+                    <th>版本编号</th>
+                    <th>定版时间</th>
+                    <th>定版人员</th>
+                    <th>版本描述</th>
+                    <th>是否基线版本</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td>BGD001</td>
+                    <td>16-5-25 AM 11:21</td>
+                    <td>人员A</td>
+                    <td>版本描述1</td>
+                    <td>是</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td>BGD002</td>
+                    <td>16-5-25 AM 11:21</td>
+                    <td>人员B</td>
+                    <td>版本描述2</td>
+                    <td>否</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td>BGD003</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td>BGD004</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td>BGD005</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td>BGD006</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+                </tbody>
+            </table>
+        </div>
+        <div class="panel-footer">
+            <a href="#">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <span>第1页/共3页（共26条记录）</span>
+            <button type="button" class="btn btn-default">转到</button>
+        </div>
+    </div>
+    <div class="modal fade" id="version-browse" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    <h4 class="modal-title">版本概要</h4>
+                </div>
+                <div class="modal-body">
+                    <table class="table table-striped table-bordered table-hover table-condensed">
+                        <caption class="sr-only">table</caption>
+                        <thead>
+                        <th></th>
+                        <th>元数据类型</th>
+                        <th>数量(点击查看)</th>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>索引</td>
+                            <td>2139</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>存储过程</td>
+                            <td>8</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>视图</td>
+                            <td>121</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>字段</td>
+                            <td>34232</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>表</td>
+                            <td>2433</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="version-tree" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    <h4 class="modal-title">版本树</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="version-tree.html"></iframe>
+                    </div>
+                </div>
+                <!--<div class="modal-footer">
+                    <button type="button" class="btn btn-primary">确定</button>
+                </div>-->
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+<script src="js/jquery.min.js"></script>
+
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+<script src="js/bootstrap.min.js"></script>
+
+</body>
+</html>

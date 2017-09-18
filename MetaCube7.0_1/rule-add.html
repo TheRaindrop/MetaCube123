@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Bootstrap Template</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/master.css">
+    <style>
+        .part{
+            margin:5px;
+        }
+        label{
+            width:120px;
+            margin-left:10px;
+        }
+        .form-group{
+            display:inline-block;
+            width:49%;
+        }
+        .form-group input{
+            display:inline-block;
+            width:auto;
+        }
+        .fileinput{
+            margin-left:5px;
+            width:85%;
+        }
+        .fileinput input{
+            display: inline-block;
+        }
+        .fileinput p{
+            color:red;
+            display:inline-block;
+            margin-left:-20px;
+        }
+        .modal-button{
+            text-align:center;
+        }
+        .modal-button button{
+            width:100px;
+        }
+    </style>
+</head>
+<body>
+<div class="">
+    <p>规则基本信息</p>
+    <form role="form">
+        <div class="part">
+            <div class="form-group">
+                <label for="input6b">规则编号：</label>
+                <input type="text" class="form-control" id="input6b" placeholder="BGD001">
+            </div>
+            <div class="form-group">
+                <label for="input7b">规则名称：</label>
+                <input type="text" class="form-control" id="input7b" placeholder="XXX比对规则">
+            </div>
+        </div>
+        <div class="part">
+            <div class="form-group">
+                <label for="input10">创建人：</label>
+                <input type="text" class="form-control" id="input10" placeholder="张三">
+            </div>
+            <div class="form-group">
+                <label for="input11">创建时间：</label>
+                <input type="text" class="form-control" id="input11" placeholder="2015年06月">
+            </div>
+        </div>
+        <div class="part">
+            <div class="form-group">
+                <label for="input8b">规则类型：</label>
+                <input type="text" class="form-control" id="input8b" placeholder="不比对属性">
+            </div>
+            <div class="form-group">
+                <label for="input9b">从其他规则复制：</label>
+                <input type="text" class="form-control" id="input9b" placeholder="">
+            </div>
+        </div>
+
+        <br/>
+
+    </form>
+</div>
+<div class="panel panel-info">
+    <div class="panel-heading">
+        <div class="right" style="text-align: right;">
+            <button type="button" class="btn btn-success">新增</button>
+            <button type="button" class="btn btn-success">修改</button>
+            <button type="button" class="btn btn-success">删除</button>
+        </div>
+        
+    </div>
+    <table class="table table-striped table-bordered table-hover table-condensed">
+        <caption class="sr-only">table</caption>
+        <thead>
+        <tr>
+            <th><input type="checkbox"></th>
+            <th>序号</th>
+            <th>属性</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td><input type="checkbox"></td>
+            <td>1</td>
+            <td>属性1</td>
+        </tr>
+        <tr>
+            <td><input type="checkbox"></td>
+            <td>2</td>
+            <td>属性2</td>
+        </tr>
+        <tr>
+            <td><input type="checkbox"></td>
+            <td>3</td>
+            <td>属性3</td>
+        </tr>
+        <tr>
+            <td><input type="checkbox"></td>
+            <td>4</td>
+            <td>属性4</td>
+        </tr>
+        <tr>
+            <td><input type="checkbox"></td>
+            <td>5</td>
+            <td>属性5</td>
+        </tr>
+        <tr>
+            <td><input type="checkbox"></td>
+            <td>6</td>
+            <td>属性6</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<div class="modal-button">
+    <button type="submit" class="btn btn-primary">发送通知</button>
+    <button type="reset" class="btn btn-success closeModal" data-dismiss="modal">关闭</button>
+</div>
+
+
+<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+<script src="js/jquery.min.js"></script>
+
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+<script src="js/bootstrap.min.js"></script>
+<script>
+    $('.closeModal').click(function(){
+        parent.closeModal();
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Bootstrap Template</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/master.css">
+</head>
+<body>
+<div id="index">
+    <div class="head">
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#"><img src="img/logo_black.svg">Primeton 元数据管理系统</a>
+                </div>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="navbar-form">
+                        <form role="search">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="搜索">
+                            </div>
+                        </form>
+                    </li>
+                    <li><a href="#" data-toggle="modal" data-target="#news">消息<span class="badge">3</span></a></li>
+                    <li><a href="#" style="color:rgb(15,148,247);">Tom&nbsp<img width="25px" src="img/head.jpg"></a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-cog"></span></a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-off"></span></a></li>
+                </ul>
+            </div><!-- /.container-fluid -->
+        </nav>
+    </div>
+    <div class="main">
+        <div class="menu">
+
+            <div class="min-menu">
+                <ul class="nav nav-pills nav-stacked" role="tablist">
+                    <li class="menu-li active" role="presentation"><a href="#home" data-toggle="tab"><img src="img/product.svg"><span>首页</span> </a></li>
+                    <li class="menu-li" role="presentation"><a href="#browse" data-toggle="tab"><img src="img/glance.svg"><span>浏览</span> </a></li>
+                    <li class="menu-li" role="presentation"><a href="#analyze" data-toggle="tab"><img src="img/statis.svg"><span>统计分析</span></a></li>
+                    <li class="menu-li" role="presentation"><a href="#appliCenter" data-toggle="tab"><img src="img/sheji.svg"><span>综合应用</span></a></li>
+                    <li class="menu-li" role="presentation"><a href="#search" data-toggle="tab"><img src="img/search.svg"><span>查询</span> </a></li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="content">
+            <div class="tab-content">
+                <div id="home" class="tab-pane fade in active">
+
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="home.html"></iframe>
+                    </div>
+                </div>
+                <div id="browse" class="tab-pane fade">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="browse.html"></iframe>
+                    </div>
+                </div>
+                <div id="analyze" class="tab-pane fade">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="analyze.html"></iframe>
+                    </div>
+                </div>
+
+                <div id="appliCenter" class="tab-pane fade" role="tabpanel">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="appliCenter.html"></iframe>
+                    </div>
+                </div>
+                <div id="search" class="tab-pane fade" role="tabpanel">
+
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="search.html"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="news" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    <h4 class="modal-title" id="myModalLabel">消息</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="news.html"></iframe>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">确定</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!--<div class="foot">
+        <nav class="navbar navbar-default navbar-fixed-bottom" role="navigation">
+            <div class="container-fluid">
+                <p>版权所有 普元信息技术股份有限公司</p>
+            </div>
+        </nav>
+    </div>-->
+</div>
+
+
+
+
+<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+<script src="js/jquery.min.js"></script>
+
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+<script src="js/bootstrap.min.js"></script>
+
+<script type="text/javascript">
+
+    /*window.onload=function(){
+
+        var h=$(document).height()-60;
+        $('.menu').height(h);
+    }
+    $(window).resize(function(){
+        var h=$(document).height()-60;
+        $(".menu").height(h);
+
+    })*/
+
+    $('.menu-li a').click(function(){
+        var h=$(this).attr('href');
+        h2=h.substring(1)+'.html';
+        $(h+' iframe').attr("src",h2);
+    })
+</script>
+
+</script>
+</body>
+</html>

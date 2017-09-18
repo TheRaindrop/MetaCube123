@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Bootstrap Template</title>
+
+    <link rel="stylesheet" href="base/css/bootstrap.min.css">
+    <script src="base/js/jquery.min.js"></script>
+    <script src="base/js/bootstrap.min.js"></script>
+    <script src="base/js/nui/nui.js"></script>
+
+    <style>
+        body{
+            background-color:rgb(245,245,245);
+        }
+
+        #x-right{
+            bottom:10px;
+            height:0;
+            position:absolute;
+            right:0;
+            top:240px;
+            width:0;
+            z-index:998;
+        }
+        .side{
+            height:205px;
+            position:fixed;
+            right:0;
+            top:200px;
+            width:54px;
+            z-index:100;
+        }
+        ol,ul{
+            list-style:outside none none;
+        }
+        .side ul li {
+            border-bottom: 1px solid #ffffff;
+            float: left;
+            height: 52px;
+            position: relative;
+            width: 100px;
+        }
+        .side ul li a {
+            padding:0;
+            border-radius:0;
+            background: #00a6d0 none repeat scroll 0 0;
+            color: #ffffff;
+            height: 50px;
+            opacity: 0.8;
+            overflow: hidden;
+            position: absolute;
+            right: 0;
+            top: 0;
+            transition: all 0.3s ease 0s;
+            width: 92px;
+        }
+        .side ul li a:hover{
+            width:170px;
+        }
+        .side ul li a img{
+            display: inline-block;
+        }
+        .nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus {
+            color: #555;
+            cursor: default;
+            background-color: #36a1da;//00acf4
+        border: 1px solid #ddd;
+        }
+        .nav-tabs>li:hover>a, .nav-tabs>li:hover>a:hover, .nav-tabs>li:hover>a:focus {
+            color: #555;
+            cursor: default;
+            background-color: #33b7d9;
+            border: 1px solid #ddd;
+        }
+        .menu-left{
+            position:fixed;
+            top:0;
+            left:0;
+            z-index:1000;
+            bottom:0;
+            background-color:#fff;
+            border-right:1px solid rgb(209,209,209);
+        }
+        .menu-left>p{
+            margin-left:10px;
+            margin-top:10px;
+            font-size:17px;
+        }
+        .menu-left>.input-group{
+            width:180px;
+            margin:10px;
+        }
+        .menu-left>.input-group>.form-control{
+            border-top-left-radius:30px;
+            border-bottom-left-radius:30px;
+            height:25px;
+            padding:2px 10px;
+        }
+        .menu-left>.input-group>.input-group-addon{
+            border-top-right-radius:30px;
+            border-bottom-right-radius:30px;
+            height:25px;
+            padding:2px 10px;
+        }
+        .tab-content{
+            position: absolute;
+            left: 40%;
+            top: 10%;
+            width:300px;
+            height:400px;
+            border:1px solid rgb(233,233,233);
+            box-shadow:  3px 5px 5px rgb(211,211,211),-2px 0 5px rgb(211,211,211);
+            background-color:white;
+        }
+        .add-user{
+            position: absolute;
+            left: 40%;
+            top: 65%;
+            width: 300px;
+            text-align: center;
+            font-size: 15px;
+        }
+        .tab-pane>img{
+            width:100%;
+        }
+    </style>
+</head>
+<body>
+<div id="x-right">
+    <div class="side">
+        <ul class="nav nav-tabs" role="tablist">
+            <li role="presentation" class="active"><a href="#tab1" role="tab" data-toggle="tab"><img src="base/images/icons/map.png">数据地图</a></li>
+            <li role="presentation"><a href="#tab2" role="tab" data-toggle="tab"><img src="base/images/icons/export.png">元数据导出</a></li>
+            <li role="presentation"><a href="#tab4" role="tab" data-toggle="tab"><img src="base/images/icons/view.png">视图管理</a></li>
+            <li role="presentation"><a href="#tab5" role="tab" data-toggle="tab"><img src="base/images/icons/template.png">版本管理</a></li>
+            <li role="presentation"><a href="#tab6" role="tab" data-toggle="tab"><img src="base/images/icons/user.png">用户管理</a></li>
+        </ul>
+    </div>
+</div>
+
+<div class="menu-left">
+    <p><strong>主题</strong></p>
+    <div class="input-group">
+        <input type="text" class="form-control" placeholder="搜索">
+        <span class="input-group-addon"><span class="glyphicon glyphicon-search"></span></span>
+    </div>
+    <ul id="menu2" class="nui-menu" width="200px">
+        <li>
+            <span iconCls="icon-remove">客户</span>
+            <ul>
+                <!--<li iconCls="icon-new" onclick="onItemClick">新建</li>
+                <li class="separator"></li>
+                <li iconCls="icon-add" onclick="onItemClick">增加</li>
+                <li iconCls="icon-edit" onclick="onItemClick">修改</li>
+                <li iconCls="icon-remove" onclick="onItemClick">删除</li>-->
+                <li>个人客户</li>
+                <li>家庭客户</li>
+                <li>机构客户</li>
+                <li>承运人</li>
+                <li>旅行合作伙伴</li>
+                <li>供应商</li>
+                <li>旅行社</li>
+                <li>政府组织</li>
+                <li>非营利性组织</li>
+                <li>客户基本信息</li>
+                <li>家庭成员</li>
+            </ul>
+        </li>
+        <!--<li class="separator"></li>-->
+        <li>
+            <span iconCls="icon-add">员工</span>
+            <ul>
+                <li>个人客户</li>
+                <li>家庭客户</li>
+                <li>机构客户</li>
+                <li>承运人</li>
+                <li>旅行合作伙伴</li>
+                <li>供应商</li>
+                <li>旅行社</li>
+                <li>政府组织</li>
+                <li>非营利性组织</li>
+                <li>客户基本信息</li>
+                <li>家庭成员</li>
+            </ul>
+        </li>
+        <li>
+            <span iconCls="icon-edit">位置</span>
+            <ul>
+                <li>个人客户</li>
+                <li>家庭客户</li>
+                <li>机构客户</li>
+                <li>承运人</li>
+                <li>旅行合作伙伴</li>
+                <li>供应商</li>
+                <li>旅行社</li>
+                <li>政府组织</li>
+                <li>非营利性组织</li>
+                <li>客户基本信息</li>
+                <li>家庭成员</li>
+            </ul>
+        </li>
+        <li>
+            <span iconCls="icon-new">订座</span>
+            <ul>
+                <li>个人客户</li>
+                <li>家庭客户</li>
+                <li>机构客户</li>
+                <li>承运人</li>
+                <li>旅行合作伙伴</li>
+                <li>供应商</li>
+                <li>旅行社</li>
+                <li>政府组织</li>
+                <li>非营利性组织</li>
+                <li>客户基本信息</li>
+                <li>家庭成员</li>
+            </ul>
+        </li>
+        <li>
+            <span iconCls="icon-remove">票务</span>
+            <ul>
+                <li>个人客户</li>
+                <li>家庭客户</li>
+                <li>机构客户</li>
+                <li>承运人</li>
+                <li>旅行合作伙伴</li>
+                <li>供应商</li>
+                <li>旅行社</li>
+                <li>政府组织</li>
+                <li>非营利性组织</li>
+                <li>客户基本信息</li>
+                <li>家庭成员</li>
+            </ul>
+        </li>
+    </ul>
+</div>
+<div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="tab1"><img src="base/images/index1.png"></div>
+    <!--<div role="tabpanel" class="tab-pane" id="tab2"><img id="img" src="images/index2.png"></div>-->
+    <div role="tabpanel" class="tab-pane" id="tab3"><img src="base/images/index4.png"></div>
+    <div role="tabpanel" class="tab-pane" id="tab4">
+        <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="subject/index.html"></iframe>
+        </div>
+    </div>
+    <div role="tabpanel" class="tab-pane" id="tab5">
+        <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="project/test2.html"></iframe>
+        </div>
+    </div>
+</div>
+<div class="add-user">
+    <p>+点击添加用户</p>
+</div>
+
+
+
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Bootstrap Template</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/master.css">
+    <style>
+        #analyze .menu ul{
+        }
+        #analyze .menu ul li{
+            display:inline-block;
+
+        }
+        #analyze .menu ul li a{
+            padding:0;
+        }
+        #analyze .nav-pills>li.active>a, #analyze .nav-pills>li.active>a:hover, #analyze .nav-pills>li.active>a:focus {
+            color: #fff;
+            background-color: #7cb5e6;
+        }
+        #analyze .menu ul li a .panel{
+            /*background-color:rgba(217,237,247,0.3);*/
+            background-color:rgba(0,0,0,0);
+        }
+        #analyze .menu ul li .panel{
+            margin-bottom:0;
+        }
+        #analyze .menu ul li .panel .panel-body p{
+            color:black;
+        }
+        #analyze .menu ul li .panel .panel-body p span{
+            font-size:35px;
+        }
+        .panel{
+            margin-top:10px;
+        }
+
+
+    </style>
+</head>
+<body>
+<div id="analyze">
+    <div class="menu">
+        <ul class="nav nav-pills nav-stacked" role="tablist">
+            <li class="menu-li active" role="presentation"><a href="#red" data-toggle="tab">
+                <div class="panel panel-info">
+                    <div class="panel-heading">元数据分布统计</div>
+                    <div class="panel-body">
+                        <p><span>1028</span><small>次</small></p>
+                    </div>
+                </div>
+            </a></li>
+            <li class="menu-li" role="presentation"><a href="#green" data-toggle="tab">
+                <div class="panel panel-info">
+                    <div class="panel-heading">元数据变更统计</div>
+                    <div class="panel-body">
+                        <p><span>23456</span><small>次</small></p>
+                    </div>
+                </div>
+            </a></li>
+            <li class="menu-li" role="presentation"><a href="#blue" data-toggle="tab">
+                <div class="panel panel-info">
+                    <div class="panel-heading">系统重要性分析</div>
+                    <div class="panel-body">
+                        <p><span>1028</span><small>次</small></p>
+                    </div>
+                </div>
+            </a></li>
+            <li class="menu-li" role="presentation"><a href="#yellow" data-toggle="tab">
+                <div class="panel panel-info">
+                    <div class="panel-heading">元数据使用情况分析</div>
+                    <div class="panel-body">
+                        <p><span>1028</span><small>次</small></p>
+                    </div>
+                </div>
+            </a></li>
+            <li class="menu-li" role="presentation"><a href="#info" data-toggle="tab">
+                <div class="panel panel-info">
+                    <div class="panel-heading">人员活跃度统计</div>
+                    <div class="panel-body">
+                        <p><span>2352</span><small>次</small></p>
+                    </div>
+                </div>
+            </a></li>
+        </ul>
+    </div>
+    <div class="tab-content">
+        <div id="red" class="tab-pane fade in active">
+            <div class="left">
+                <div class="panel panel-default">
+                    <div class="panel-heading">元数据分布图</div>
+                    <div class="panel-body">
+                        <img src="img/left1.png">
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">元数据分布图——变更趋势</div>
+                    <div class="panel-body">
+                        <img src="img/left2.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="green" class="tab-pane fade">
+            <div class="panel panel-default">
+                <div class="panel-heading">系统重要性统计</div>
+                <div class="panel-body">
+                    <img src="img/right.png">
+                    <table class="table table-striped table-bordered table-hover table-condensed">
+                        <caption class="sr-only">table</caption>
+                        <thead>
+                        <tr>
+                            <th>系统名称</th>
+                            <th>上线日期</th>
+                            <th>投资额</th>
+                            <th>主责部门</th>
+                            <th>接受数量</th>
+                            <th>输出数量</th>
+                            <th>关联总数</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th>核心系统</th>
+                            <td>16-03-23</td>
+                            <td>A系统</td>
+                            <td>部门A</td>
+                            <td>14</td>
+                            <td>20</td>
+                            <td>35</td>
+                        </tr>
+                        <tr>
+                            <th>信贷系统</th>
+                            <td>16-03-23</td>
+                            <td>系统</td>
+                            <td>部门B</td>
+                            <td>16</td>
+                            <td>9</td>
+                            <td>29</td>
+                        </tr>
+                        <tr>
+                            <th>综合办公</th>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th>资金系统</th>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th>评级器系统</th>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th>助学贷款系统</th>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th>国际结算</th>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div id="blue" class="tab-pane fade">
+            <div class="panel panel-default">
+                            <div class="panel-heading">系统重要性统计</div>
+                            <div class="panel-body">
+                                <img src="img/right.png">
+                                <table class="table table-striped table-bordered table-hover table-condensed">
+                                    <caption class="sr-only">table</caption>
+                                    <thead>
+                                    <tr>
+                                        <th>系统名称</th>
+                                        <th>上线日期</th>
+                                        <th>投资额</th>
+                                        <th>主责部门</th>
+                                        <th>接受数量</th>
+                                        <th>输出数量</th>
+                                        <th>关联总数</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <th>核心系统</th>
+                                        <td>16-03-23</td>
+                                        <td>A系统</td>
+                                        <td>部门A</td>
+                                        <td>14</td>
+                                        <td>20</td>
+                                        <td>35</td>
+                                    </tr>
+                                    <tr>
+                                        <th>信贷系统</th>
+                                        <td>16-03-23</td>
+                                        <td>系统</td>
+                                        <td>部门B</td>
+                                        <td>16</td>
+                                        <td>9</td>
+                                        <td>29</td>
+                                    </tr>
+                                    <tr>
+                                        <th>综合办公</th>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <th>资金系统</th>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <th>评级器系统</th>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <th>助学贷款系统</th>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <th>国际结算</th>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+        </div>
+        <div id="yellow" class="tab-pane fade">
+            <div class="panel panel-default">
+                <div class="panel-heading">系统重要性统计</div>
+                <div class="panel-body">
+                    <img src="img/right.png">
+                    <table class="table table-striped table-bordered table-hover table-condensed">
+                        <caption class="sr-only">table</caption>
+                        <thead>
+                        <tr>
+                            <th>系统名称</th>
+                            <th>上线日期</th>
+                            <th>投资额</th>
+                            <th>主责部门</th>
+                            <th>接受数量</th>
+                            <th>输出数量</th>
+                            <th>关联总数</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th>核心系统</th>
+                            <td>16-03-23</td>
+                            <td>A系统</td>
+                            <td>部门A</td>
+                            <td>14</td>
+                            <td>20</td>
+                            <td>35</td>
+                        </tr>
+                        <tr>
+                            <th>信贷系统</th>
+                            <td>16-03-23</td>
+                            <td>系统</td>
+                            <td>部门B</td>
+                            <td>16</td>
+                            <td>9</td>
+                            <td>29</td>
+                        </tr>
+                        <tr>
+                            <th>综合办公</th>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th>资金系统</th>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th>评级器系统</th>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th>助学贷款系统</th>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th>国际结算</th>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div id="info" class="tab-pane fade">
+            <div class="panel panel-default">
+                <div class="panel-heading">系统重要性统计</div>
+                <div class="panel-body">
+                    <img src="img/right.png">
+                    <table class="table table-striped table-bordered table-hover table-condensed">
+                        <caption class="sr-only">table</caption>
+                        <thead>
+                        <tr>
+                            <th>系统名称</th>
+                            <th>上线日期</th>
+                            <th>投资额</th>
+                            <th>主责部门</th>
+                            <th>接受数量</th>
+                            <th>输出数量</th>
+                            <th>关联总数</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th>核心系统</th>
+                            <td>16-03-23</td>
+                            <td>A系统</td>
+                            <td>部门A</td>
+                            <td>14</td>
+                            <td>20</td>
+                            <td>35</td>
+                        </tr>
+                        <tr>
+                            <th>信贷系统</th>
+                            <td>16-03-23</td>
+                            <td>系统</td>
+                            <td>部门B</td>
+                            <td>16</td>
+                            <td>9</td>
+                            <td>29</td>
+                        </tr>
+                        <tr>
+                            <th>综合办公</th>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th>资金系统</th>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th>评级器系统</th>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th>助学贷款系统</th>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th>国际结算</th>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+</div>
+
+
+
+
+<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+<script src="js/jquery.min.js"></script>
+
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+<script src="js/bootstrap.min.js"></script>
+<script>
+    var w=$(window).width()-26;
+    $(".menu-li a .panel").width(w/5);
+    $(window).resize(function(){
+        var w=$(window).width()-26;
+        $(".menu-li a .panel").width(w/5);
+    })
+</script>
+
+
+</body>
+</html>

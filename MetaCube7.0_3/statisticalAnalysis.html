@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Bootstrap Template</title>
+    <link rel="stylesheet" href="base/css/bootstrap.min.css">
+    <link rel="stylesheet" href="base/css/master.css">
+    <script src="base/js/jquery.min.js"></script>
+    <script src="base/js/bootstrap.min.js"></script>
+    <script src="base/js/nui/nui.js"></script>
+    <style>
+        html, body {
+            height: 100%;
+        }
+        html {
+            overflow: hidden;
+        }
+        body {
+            font-family:"微软雅黑";
+            overflow: auto;
+            width: calc(100vw + 20px);
+        }
+        body{
+            background-color:rgb(246,246,246)
+        }
+        .left{
+            width:75%;
+            padding:20px;
+        }
+        .right{
+            position:fixed;
+            top:0;
+            right:0;
+            bottom:0;
+            width:25%;
+        }
+        .left .block .panel{
+            width:49%;
+            display:inline-block;
+            height:300px;
+            border-radius:0;
+            -webkit-box-shadow:  3px 3px 5px rgb(223,223,223);
+            -moz-box-shadow:  3px 3px 5px rgb(223,223,223);
+            box-shadow:  3px 3px 5px rgb(223,223,223);
+            overflow: hidden;
+        }
+
+        .panel>.panel-body>img{
+            width:100%;
+        }
+    </style>
+</head>
+<body>
+<div class="left">
+    <div class="block">
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <p><strong>元数据变更趋势</strong></p>
+                <img src="base/images/analyse1.png">
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <p><strong>元数据重要性统计</strong></p>
+                <img src="base/images/analyse2.png">
+            </div>
+        </div>
+    </div>
+    <div class="block">
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <p><strong>元数据分布统计</strong></p>
+                <img src="base/images/analyse3.png">
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <p><strong>元数据质量统计</strong></p>
+                <img src="base/images/analyse4.png">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="right">
+    <div class="panel" style="height:100%;border-radius:0;">
+        <div class="panel-body">
+            <p><strong>元数据采集能力</strong></p>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+</body>
+</html>
